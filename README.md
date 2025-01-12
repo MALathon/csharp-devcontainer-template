@@ -14,9 +14,22 @@ Think of this as your personal Ubuntu development environment that:
 - 🧪 Includes testing tools from day one
 - 📚 Has built-in documentation to help you learn
 
-## Quick Start for Ubuntu
+## This is a GitHub Template Repository
 
-### 1. Install Required Tools
+This repository is set up as a template, which means:
+1. Don't clone it directly
+2. Click the green "Use this template" button on GitHub
+3. Choose "Create a new repository"
+4. This creates your own copy with a fresh Git history
+
+## Getting Started
+
+### 1. Create Your Repository
+1. Go to https://github.com/MALATHON/csharp-devcontainer-template
+2. Click "Use this template" → "Create a new repository"
+3. Name your repository and create it
+
+### 2. Install Required Tools
 ```bash
 # Install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -34,37 +47,37 @@ sudo apt install code
 
 Log out and log back in for Docker permissions to take effect.
 
-### 2. First Time Setup
+### 3. First Time Setup
 1. Open VS Code
 2. Install the "Dev Containers" extension:
    ```bash
    code --install-extension ms-vscode-remote.remote-containers
    ```
 
-### 3. Get the Development Environment
+### 4. Get Your Development Environment
 ```bash
-# Clone the repository
-git clone [repository-url]
-cd [repository-name]
+# Clone your new repository (replace with your repository URL)
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+cd YOUR-REPOSITORY-NAME
 
 # Open in VS Code
 code .
 ```
 
-### 4. Start Coding
+### 5. Start Coding
 1. When VS Code opens, click "Reopen in Container" when prompted
 2. Wait for setup (first time takes about 5-10 minutes)
    - Watch the bottom right for progress
    - The container is installing development tools
 3. Open Terminal in VS Code:
-   - Press `` Ctrl+` `` or
+   - Press Ctrl+` or
    - Menu: View → Terminal
-4. Run the setup script:
+4. Create your first project:
    ```bash
-   ./create-project.sh
+   ./scripts/create-project.sh
    ```
 
-### 5. What Just Happened?
+### 6. What Just Happened?
 - 🛠️ Created a C# environment with:
   - .NET 8.0 SDK
   - Testing tools (xUnit, FluentAssertions, Moq)
@@ -78,7 +91,7 @@ code .
   - Debugging tools
   - Testing interface
 
-### 6. Need Help?
+### 7. Need Help?
 Start the documentation server:
 ```bash
 mkdocs serve

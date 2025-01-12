@@ -209,3 +209,6 @@ rm -rf ~/.config/Code/Cache/*
 ```
 
 Remember: After any major changes, you might need to rebuild your development container! 
+
+# Run setup script
+./scripts/setup-ubuntu.sh 

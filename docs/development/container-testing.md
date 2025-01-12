@@ -101,7 +101,7 @@ Test these common scenarios:
 docker run -it ubuntu:20.04
 
 # Run setup script
-./setup-ubuntu.sh
+./scripts/setup-ubuntu.sh
 
 # Verify environment
 ```
