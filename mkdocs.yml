@@ -1,0 +1,36 @@
+site_name: Game Development Project
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Complete Beginner's Guide: getting-started/complete-beginners-guide.md
+    - What is a Dev Container?: getting-started/what-is-container.md
+    - First Steps: getting-started/first-steps.md
+    - C# Basics: getting-started/csharp-basics.md
+    - Setup: getting-started/setup.md
+    - Project Structure: getting-started/project-structure.md
+    - Troubleshooting: getting-started/troubleshooting.md
+  - Development:
+    - Coding Standards: development/coding-standards.md
+    - Testing: development/testing.md
+    - Debugging: development/debugging.md
+    - Terminal Tips: development/terminal-tips.md
+    - Git Workflow: development/git-workflow.md
+    - CI/CD Guide: development/ci-cd.md
+  - Examples:
+    - Number Guessing Game: examples/number-guessing.md
+  - Reference:
+    - Command Reference: reference/commands.md
+    - VS Code Shortcuts: reference/shortcuts.md
+    - Useful Aliases: reference/aliases.md 

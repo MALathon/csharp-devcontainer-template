@@ -1,0 +1,30 @@
+{
+    "name": "C# Game Development",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+    
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.11"
+        }
+    },
+    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-dotnettools.csdevkit",
+                "formulahendry.dotnet-test-explorer",
+                "ryanluker.vscode-coverage-gutters",
+                "streetsidesoftware.code-spell-checker",
+                "eamodio.gitlens",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    },
+    
+    "postCreateCommand": "pip install mkdocs mkdocs-material && dotnet restore",
+    
+    "remoteUser": "vscode"
+} 

@@ -1,0 +1,24 @@
+## .NET Build Output
+# Compiled files
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+## VS Code
+# VS Code directory
+.vscode/*
+# But keep important settings
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+## Docker
+# Docker working directory
+.docker/
+
+## Documentation
+# Generated documentation site
+site/ 
