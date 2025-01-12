@@ -18,10 +18,12 @@ Think of this as your personal Ubuntu development environment that:
 ## Prerequisites
 
 Before you begin, make sure you have:
-- Ubuntu 20.04 or newer installed
+- Ubuntu 22.04 LTS installed (recommended)
 - Internet connection
 - At least 4GB of free RAM
 - 10GB of free disk space
+
+Note: While Ubuntu 24.04 may work, we recommend using Ubuntu 22.04 LTS for the most stable experience.
 
 ## This is a GitHub Template Repository
 
@@ -40,7 +42,7 @@ This repository is set up as a template, which means:
 4. Note down your new repository's URL - you'll need it later!
 
 ### 2. Set Up Your Ubuntu System
-First, we need to install the required tools on your Ubuntu system:
+First, we need to install the required tools on your Ubuntu 22.04 system:
 
 ```bash
 # Update your system first
@@ -140,6 +142,8 @@ The workflow will:
 You can see the status of your builds in the "Actions" tab of your repository.
 
 ## Common Ubuntu Issues & Solutions
+
+Note: These instructions are tested on Ubuntu 22.04 LTS.
 
 ### Docker Permission Issues?
 ```bash
