@@ -7,19 +7,27 @@ NC='\033[0m'
 echo "Creating new C# project..."
 
 # Create solution and projects
-dotnet new sln -n MyProject
-dotnet new console -n MyProject
-dotnet new xunit -n MyProject.Tests
+dotnet new sln -n LearnCSharp
+dotnet new console -n LearnCSharp.Console
+dotnet new classlib -n LearnCSharp.Core
+dotnet new xunit -n LearnCSharp.Tests
 
 # Add projects to solution
-dotnet sln add MyProject/MyProject.csproj
-dotnet sln add MyProject.Tests/MyProject.Tests.csproj
+dotnet sln add LearnCSharp.Console/LearnCSharp.Console.csproj
+dotnet sln add LearnCSharp.Core/LearnCSharp.Core.csproj
+dotnet sln add LearnCSharp.Tests/LearnCSharp.Tests.csproj
 
-# Add test reference
-dotnet add MyProject.Tests/MyProject.Tests.csproj reference MyProject/MyProject.csproj
+# Add project references
+dotnet add LearnCSharp.Console/LearnCSharp.Console.csproj reference LearnCSharp.Core/LearnCSharp.Core.csproj
+dotnet add LearnCSharp.Tests/LearnCSharp.Tests.csproj reference LearnCSharp.Core/LearnCSharp.Core.csproj
 
 # Add common packages
-dotnet add MyProject.Tests/MyProject.Tests.csproj package FluentAssertions
-dotnet add MyProject.Tests/MyProject.Tests.csproj package Moq
+cd LearnCSharp.Core
+dotnet add package Microsoft.Extensions.DependencyInjection
+dotnet add package Microsoft.Extensions.Logging
+
+cd ../LearnCSharp.Tests
+dotnet add package FluentAssertions
+dotnet add package Moq
 
 echo -e "${GREEN}Project created successfully!${NC}" 

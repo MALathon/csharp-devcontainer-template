@@ -12,13 +12,22 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
+        
+    - name: Create Project
+      run: |
+        chmod +x ./scripts/create-project.sh
+        ./scripts/create-project.sh
+        
     - name: Restore
       run: dotnet restore
+      
     - name: Build
       run: dotnet build --no-restore
+      
     - name: Test
-      run: dotnet test --no-build 
+      run: dotnet test --no-build --verbosity normal 
