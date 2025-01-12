@@ -1,4 +1,33 @@
-# Continuous Integration & Deployment
+# Continuous Integration Guide
+
+## CI Configuration
+
+Our CI pipeline runs on Ubuntu 22.04 to ensure stability and compatibility. The workflow:
+1. Sets up .NET 8.0
+2. Creates a new project
+3. Builds the solution
+4. Runs all tests
+
+### Why Ubuntu 22.04?
+
+We specifically use Ubuntu 22.04 because:
+- It's a Long Term Support (LTS) release
+- Has all required dependencies pre-installed
+- Provides consistent behavior
+- Will be supported until April 2027
+
+### CI Pipeline Steps
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-22.04  # Explicitly use 22.04 for stability
+    steps:
+    - Setup .NET 8.0
+    - Create project structure
+    - Build solution
+    - Run tests
+```
 
 ## What Is CI/CD?
 
