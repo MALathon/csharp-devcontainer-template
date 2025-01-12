@@ -112,17 +112,32 @@ code .
   - Debugging tools
   - Testing interface
 
-### 7. Need Help?
-Start the documentation server:
-```bash
-mkdocs serve
-```
-Then open http://localhost:8000 in your browser
+### 7. Next Steps
+1. Start the documentation server:
+   ```bash
+   mkdocs serve
+   ```
+2. Open http://localhost:8000 in your browser
+3. Read these guides in order:
+   - 📘 "Getting Started → What is a Dev Container?"
+   - 🔰 "Getting Started → First Steps"
+   - 🧪 "Development → Testing"
 
-Look for:
-- 📘 "What is a Dev Container?"
-- 🔰 "First Steps"
-- ❓ "Ubuntu Troubleshooting"
+## Continuous Integration
+
+This template includes GitHub Actions for CI/CD:
+- ✅ Automatically builds your code
+- ✅ Runs all tests
+- ✅ Checks for common issues
+- ✅ Works on every push and pull request
+
+The workflow will:
+1. Set up .NET 8.0
+2. Create a new project
+3. Build the solution
+4. Run all tests
+
+You can see the status of your builds in the "Actions" tab of your repository.
 
 ## Common Ubuntu Issues & Solutions
 
