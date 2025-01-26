@@ -24,7 +24,7 @@
         }
     },
     
-    "postCreateCommand": "pip install mkdocs mkdocs-material && dotnet restore",
+    "postCreateCommand": "pip install mkdocs mkdocs-material && chmod +x ./scripts/create-project.sh && ./scripts/create-project.sh",
     
     "remoteUser": "vscode"
 } 
